@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 1.5fr 5fr;
+            grid-template-rows: 1fr 1fr 7fr 1fr;
+            grid-gap: 4px;
+        }
+        .header{
+          grid-row: 1/2;
+          grid-column: 1/3;
+          background-color:black ;
+        }
+        .slider{
+           grid-row: 2/4;
+           grid-column: 1/2;
+           background-color: orange;
+        }
+        .nav{
+            grid-row: 2/3;
+            grid-column: 2/3;
+            background-color: orange;
+        }
+        .main{
+            grid-row: 3/4;
+            grid-column: 2/3;
+            background-color: lightgray;
+          
+        }
+        .footer{
+            grid-row: 4/5;
+            grid-column: 1/3;
+            background-color: black;
+        }
+       .containerflex_header{
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;
+        padding-top: 2%;
+        
+       }
+       .containerflex_header >div{
+        color: white;
+       }
+       .flexlinks{
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around ;
+        width: 60%;
+       }
+       /* style slider */
+       .flix_slider{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 25%;
+        padding-bottom: 25%;
+       }
+       .flix_slider >div{
+        border: 1px black solid;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border-radius: 4px;
+        background-color: white;
+
+       }
+       .box{
+        padding: 7%;
+        text-align: center;
+        font-size: 100%;
+       }
+       /* style nav */
+       .flex-nav{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3%;
+       }
+
+       /* style main */
+       .flex-main{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+        justify-content: space-between;
+        justify-content: space-around;
+       }
+       .flex-main >div{
+        border: 1px white solid;
+        background-color: white;
+        width: calc(100%/7);
+        margin: 1%;
+       }
+       .card{
+        color: black;
+       font-size: 100%;
+       }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="header">
+            <div class="containerflex_header">
+                <div>Header LOGO</div>
+                <div class="flexlinks">
+                <div><a>header link one</a></div>
+                <div><a>header link two</a></div>
+                <div><a>header link three</a></div>
+                <div><a>header link four</a></div>
+            </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="flix_slider">
+                <div class="box">Image</div>
+                <div class="box">BOX1</div>
+                <div class="box">BOX2</div>
+                <div class="box">BOX3</div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="flex-nav">
+                <div class="n">nav1</div>
+                <div class="n">nav2</div>
+                <div class="n">nav3</div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="flex-main">
+                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rerum fugit laboriosam enim dolore architecto mollitia,
+                     odio a, optio, voluptatem neque! Illo eos et reprehenderit delectus quos! Nostrum, rerum laborum.</div>
+                <div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, laboriosam dolorum! Repudiandae enim tenetur, 
+                    nisi nam illum excepturi. Porro rem possimus odit corrupti vitae dolorem deleniti animi ipsam, dolor temporibus.</div>
+                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corporis reiciendis ea quaerat ab a 
+                    aut vero accusantium iusto nihil ipsum, explicabo expedita velit delectus architecto ex inventore optio quisquam.</div>
+                <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia cupiditate tempora commodi illum suscipit! Unde autem cumque voluptatem voluptate nam consectetur,
+                     et soluta quibusdam earum, quos necessitatibus ea, obcaecati exercitationem.</div>
+                <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat explicabo, aspernatur sequi dolorum officiis beatae voluptate nostrum illo?
+                     Architecto laborum deserunt rem optio amet eligendi nam sit error ab cum.</div>
+                <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, a quis commodi maiores doloremque quae architecto debitis veritatis laboriosam
+                     necessitatibus praesentium deleniti unde perspiciatis suscipit tempore assumenda eius! Amet, id?</div>
+                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere, laborum harum obcaecati sapiente ab natus illum molestias.
+                     Quis provident ducimus impedit doloremque maiores. Perferendis sed illo nihil obcaecati quis?</div>
+                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea labore nihil minus facilis, hic corporis velit natus adipisci fuga, quasi molestias, 
+                    consequatur praesentium dolores excepturi autem quae temporibus maxime quis.</div>
+                <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate maiores aliquid sed totam quas ipsam eum enim voluptatem possimus?
+                     Laudantium recusandae sunt quos numquam maiores quae soluta ratione doloremque cupiditate!</div>
+                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, rerum ipsa ratione aperiam velit in enim, vitae recusandae deserunt, 
+                    beatae laudantium omnis sequi quibusdam incidunt esse? Qui iusto nulla eligendi.</div>
+                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quisquam nobis amet obcaecati cum ea magnam tenetur, 
+                    alias soluta eum labore accusantium tempora facere doloremque assumenda, hic, reprehenderit quae deleniti.</div>
+                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quas officiis expedita earum dolores rem tenetur nemo laboriosam culpa, quia, 
+                    totam cumque, quae necessitatibus labore in consequuntur provident excepturi corrupti.</div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    
+</body>
+</html>

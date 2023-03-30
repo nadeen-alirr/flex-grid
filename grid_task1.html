@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container_grid{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+        gap: 4px;
+      
+     }   
+     .header{
+        background-color: yellow;
+        grid-column: 1/3;
+        grid-row: 1/2;
+      
+     }
+     .sidebar{
+        background-color: orange;
+        grid-column: 1/2;
+        grid-row: 2/7;
+
+     }
+     .Nav{
+        background-color: lightskyblue;
+        grid-row: 2/3;
+        grid-column:2/3 ;
+     }
+     .article{
+        background-color: lightgray;
+        grid-column: 2/3;
+        grid-row: 3/7;
+
+     }
+     .footer{
+        background-color: black;
+        grid-column: 1/3;
+     }
+     .container_grid > div{
+        color: white;
+        text-align: center;
+        border-radius: 30px;
+        font-size: 25px;
+        padding: 20px;
+     }
+
+     .article > div{
+        padding: 10px;
+        font-size: 25px;
+        color: white;
+        text-align: left;
+     }
+    </style>
+</head>
+<body>
+    <div class="container_grid">
+        <div class="header">Header</div>
+        <div class="sidebar">sidebar</div>
+        <div class="Nav">Nav</div>
+        <div class="article">Article
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dignissimos obcaecati fugiat, non distinctio, 
+                cupiditate aspernatur ad dolorem adipisci numquam pariatur sunt veritatis enim maxime voluptatum 
+                atque delectus corporis harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ducimus, minus doloremque, doloribus
+                 perferendis libero nihil rerum, sed quisquam tempora reiciendis ipsum vitae in? Architecto labore ipsa blanditiis officiis adipisci?
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum perspiciatis quam eius dignissimos
+                  est amet tempora, doloremque aut nihil saepe temporibus. Suscipit quasi pariatur asperiores in. Delectus ducimus eum possimus!
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia expedita qui magnam veritatis obcaecati minima consectetur, 
+                  nulla voluptatem quod explicabo, atque temporibus officiis in ad sunt! Libero inventore consequatur pariatur.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo mollitia minus laudantium natus delectus voluptatem 
+                  voluptas voluptates enim illum quia. Similique pariatur excepturi dolore corporis expedita eligendi consequatur ipsam commodi!
+            </div>
+        </div>
+        
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

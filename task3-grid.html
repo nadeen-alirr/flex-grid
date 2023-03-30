@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-auto-rows: minmax(80px,auto);
+        }
+        .container-grid > div {
+            text-align: center;
+        }
+        .item{
+            color: red;
+        }
+        .nested{
+            color: red;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 1px;
+        }
+        .nested > div {
+            border: 1px black solid;
+            background-color: lightgreen;
+        }
+        .nested2{
+            color: red;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .nested3{
+            color: red;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: 1px;
+        }
+        .nested3 > div {
+            border: 1px black solid;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-grid">
+
+        <div class="item" style="background-color: green;">Box1</div>
+        <div class="item" style="background-color: yellow;">Box2</div>
+        <div class="item" style="background-color: greenyellow;">Box3
+            <div class="nested">
+                <div class="item">3.1</div>
+                <div class="item">3.2</div>
+                <div class="item">3.3</div>
+                <div class="item">3.4</div>
+                <div class="item">3.5</div>
+                <div class="item">3.6</div>
+            </div>
+        </div>
+
+        <div  class="item" style="background-color: orange;">Box4
+            <div class="nested2">
+            <div style="background-color: purple; color: red;" class="item">4.1</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item" style="background-color: mediumorchid;">4.2</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item" style="background-color: darkslateblue;">4.3</div>
+        </div>
+        </div>
+
+        <div class="item" style="background-color: blueviolet;">Box5</div>
+        <div class="item" style="background-color: plum;">Box6</div>
+        <div class="item" style="background-color: palevioletred;">Box7</div>
+        <div class="item" style="background-color: darkblue;">Box8</div>
+
+        <div class="item" style="background-color: brown;">Box9
+            <div class="nested3">
+            <div class="item">9.1</div>
+            <div class="item">9.2</div>
+            <div class="item">9.3</div>
+            <div class="item">9.4</div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
